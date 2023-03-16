@@ -7,7 +7,7 @@
     const p = document.createElement('p');
     const a = document.createElement('a');
     const img = document.createElement('img');
-     div.setAttribute("id", redditObject['data']['id']);
+    div.setAttribute("id", redditObject['data']['id']);
     div.setAttribute("class", "redditPosts")
     p.innerText = redditObject['data']['title'];
     a.href = `https://reddit.com/${redditObject['data']['permalink']}`;
@@ -23,6 +23,7 @@
   browse.addEventListener("click", (e) => {
     if (document.querySelectorAll(".redditPosts") !== null) {
         const oldPosts = document.querySelectorAll(".redditPosts");
+        // oldPosts.classList.add('animate__animated', 'animate__bounceOutLeft');
         oldPosts.forEach(posts => {
         posts.remove();
     })
