@@ -10,7 +10,7 @@
      div.setAttribute("id", redditObject['data']['id']);
     div.setAttribute("class", "redditPosts")
     p.innerText = redditObject['data']['title'];
-    a.href = redditObject['data']['url'];
+    a.href = `https://reddit.com/${redditObject['data']['permalink']}`;
     a.innerText = "link";
     img.src = redditObject['data']['thumbnail'];
     posts.append(div);

@@ -21,10 +21,12 @@ a {
     color: black;
     width: auto;
     margin-top: 15px;
+    padding: 50px;
 }
 
 img {  
     position: relative;
+    display: block;
   }
   
   /* style this to fit your needs */
